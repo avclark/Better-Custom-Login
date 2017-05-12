@@ -4,9 +4,22 @@
 extract($args);
 		
 ?>
+
+<div id="bcl-header">
+  <div id="bcl-logo"><img src="<?php echo plugins_url( 'better-custom-login/admin/images/bcl-logo.png' ); ?>" alt="<?php _e( 'Better Custom Login', 'better-custom-login'); ?>"></div>
+</div>
+
+<div class="wrap">
+  <div class="heading-wrap">
+    <h1 class="wp-heading-inline">Better Custom Login is an <a href="http://avclark.com">avclark</a> plugin.</h1>
+  </div>
+</div>
+
+<hr class="wp-header-end">
+
 <div class="wrap acf-settings-wrap">
 	
-	<h1><?php echo $page['page_title']; ?></h1>
+	<!-- <h1><?php echo $page['page_title']; ?> Hello</h1> -->
 	
 	<form id="post" method="post" name="post">
 		

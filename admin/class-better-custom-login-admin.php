@@ -131,8 +131,21 @@ class Better_Custom_Login_Admin {
 		remove_menu_page('edit.php?post_type=acf-field-group');
 	}
 
+	public function bcl_add_settings_link( $links ) {
+
+		$settings_link = '<a href="options-general.php?page=better-custom-login">' . __('Settings', 'better-custom-login') . '</a>';
+    array_unshift($links, $settings_link);
+
+    return $links;
+	}
+
 	public function bcl_custom_login() {
 		include plugin_dir_path( __FILE__ ) . 'partials/better-custom-login-display.php';
+	}
+
+	public function bcl_loginlogo_url( $url ) {
+		$logo_link = get_field( 'logo_link', 'option' );
+		return $logo_link;
 	}
 
 }

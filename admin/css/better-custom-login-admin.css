@@ -12,3 +12,73 @@
   color: #777777;
   display: block;
 }
+
+.settings_page_better-custom-login .wp-menu-image img {
+  width: 16px;
+  height: 16px;
+}
+
+#bcl-header {
+  background: #ff5858;
+  background: -webkit-linear-gradient(140deg, #ff5858, #f857a6);
+  background: linear-gradient(140deg, #ff5858, #f857a6);
+  height: 120px;
+  margin-left: -20px;
+}
+
+
+#bcl-logo {
+  margin: 0;
+  padding-top: 25px;
+  line-height: 120px;
+  margin-left: 20px;
+}
+
+#bcl-logo img {
+  max-width: 530px;
+}
+
+.settings_page_better-custom-login .wrap{
+  margin-top: 0px !important;
+}
+
+.settings_page_better-custom-login .heading-wrap {
+  background-color: #fff;
+  height: 60px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+}
+
+.settings_page_better-custom-login #wpbody-content h1 {
+  display: block;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  #bcl-header {
+    height: 60px;
+  }
+
+  #bcl-logo {
+    padding-top: 12px;
+    line-height: 60px;
+  }
+
+  #bcl-logo img {
+    max-width: 288px;
+  }
+
+  .settings_page_better-custom-login .heading-wrap {
+    height: 80px;
+  }
+
+  .settings_page_better-custom-login #wpbody-content h1 {
+    font-size: 14px;
+  }
+}

@@ -159,9 +159,13 @@ class Better_Custom_Login {
 		$this->loader->add_filter( 'acf/settings/path', $plugin_admin, 'bcl_settings_path' );
 		$this->loader->add_filter( 'acf/settings/dir', $plugin_admin, 'bcl_settings_dir' );
 		$this->loader->add_filter( 'admin_menu', $plugin_admin, 'bcl_remove_acf_admin_menu' );
+		$this->loader->add_filter( 'plugin_action_links_better-custom-login', $plugin_admin, 'bcl_add_settings_link' );
 		$this->loader->add_action( 'init', $plugin_admin, 'bcl_add_menu' );
 		$this->loader->add_action( 'init', $plugin_admin, 'bcl_load_settings_fields' );
 		$this->loader->add_action( 'login_head', $plugin_admin, 'bcl_custom_login' );
+		$this->loader->add_filter( 'login_headerurl', $plugin_admin, 'bcl_loginlogo_url' );
+
+
 
 	}
 
